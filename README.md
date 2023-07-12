@@ -25,6 +25,8 @@
 `$ METABASE_SESSION_TOKEN=./metabase-python-api-notify.py create_session_token`
 
 ### Listing databases
+- requires environment variables
+    - METABASE_URL
 - requires session token to be passed as an argument
 
 `$ ./metabase-python-api-notify.py $METABASE_SESSION_TOKEN`
@@ -33,6 +35,7 @@
 
 ### Using Metabase Notify API
 - requires environment variables
+    - METABASE_URL
     - MB_API_KEY
 - requires argument
     - database_id - should be integer

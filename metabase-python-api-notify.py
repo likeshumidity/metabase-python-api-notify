@@ -52,8 +52,8 @@ def list_databases(session_token):
 # re: https://www.metabase.com/docs/latest/api/notify
 def notify_rescan_db(database_id, *args, table_id=None, table_name=None, scan_type=None):
     """Notifies Metabase of potential schema change. Requires database_id
-        argument and MB_API_TOKEN environment variable. Optionally accepts
-        table_id, table_name, and scan_type.
+        argument and environment variables METABASE_URL, MB_API_TOKEN.
+        Optionally accepts table_id, table_name, and scan_type.
         """
     metabase_url = os.getenv('METABASE_URL')
 
